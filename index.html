@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <!--meta tags-->
+  <meta charset="UTF-8">
+  <meta name="description" content="web design">
+  <meta name="author" content="lexus drumgold">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--imports-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://use.fontawesome.com/c6d3fe14c1.js"></script>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+
+  <!--self defined files-->
+  <link rel="stylesheet" type="text/css" href="styles/css/app.css">
+  <script type="text/javascript" src="js/app.js"></script>
+
+
+  <!--title-->
+  <title>Sitters</title>
+</head>
+
+<body>
+
+   
+  <section id="landing">
+    <div class="wrapper">
+      
+      <!-- header -->
+      <header>
+        <nav>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#" class="pill-btn">SIGN UP</a>
+        </nav>
+      </header>
+      
+      <!-- banner content-->
+      <div class="banner-content">
+        <h1>Sitters.</h1>
+        <h1>There when
+        <br/>you can't be.</h1>
+        <a href="#about" id="learn-more" class="pill-btn">Learn More</a>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!--  about section -->
+  <section id="about">
+    <div class="wrapper">
+      <h1>About</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et volutpat ex, a posuere diam. Nam ut tristique lacus, ac bibendum odio. In mauris nisi, venenatis nec ante vel, consectetur cursus nisi. Aenean pellentesque tincidunt massa, eleifend vehicula ex vestibulum non. Cras enim leo, vestibulum quis rutrum eget, consequat a nibh. Donec varius lacinia lectus in porta. Integer pharetra volutpat nisl, nec consectetur lorem fringilla sit amet. Nam ex velit, iaculis sed diam vitae, consectetur faucibus mi. Nunc at tempus nibh, sollicitudin ultrices lorem. Donec faucibus, ante nec tincidunt pharetra, diam lectus convallis velit, varius scelerisque leo dui porttitor libero. Donec ac maximus enim. Pellentesque molestie, lectus sit amet convallis dapibus, neque mauris aliquam risus, a dignissim orci lorem eu libero. Aenean mollis augue vitae tellus tristique pharetra. Aliquam tincidunt orci gravida risus ultricies, nec luctus lectus euismod. Vivamus ultrices aliquet sem, accumsan sodales tellus mattis quis.
+      </p>
+    </div>
+  </section>
+  
+  <!--  services section -->
+  <section id="services">
+    <div class="wrapper">
+     
+      <h1>What We Offer</h1>
+      <div class="service-blocks">
+        <div>
+          <h3>Walking</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu mauris urna.
+          </p>
+          <a href="#" class="pill-btn learn-more">Learn More</a>
+        </div>
+        
+        <div>
+          <h3>Drop In</h3>
+          <p>
+            Fusce vel nisi porttitor, gravida elit sed, pharetra velit. Fusce consequat mauris quis orci bibendum, ac tempor leo scelerisque.
+          </p>
+          <a href="#" class="pill-btn learn-more">Learn More</a>
+        </div>
+        
+        <div>
+          <h3>Day Care</h3>
+          <p>
+            Cras erat nisi, pharetra id enim sit amet, interdum congue lectus. Morbi vel mi at urna pulvinar porttitor. Sed consectetur orci at odio fringilla, ac dictum magna maximus.
+          </p>
+          <a href="#" class="pill-btn learn-more">Learn More</a>
+        </div>
+        
+        <div>
+          <h3>Boarding</h3>
+          <p>
+            Nullam volutpat vel arcu tincidunt fermentum. Quisque lacinia vulputate est, nec porttitor massa viverra vel.
+          </p>
+          <a href="#" class="pill-btn learn-more">Learn More</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!--  cta section -->
+  <section id="cta">
+    <div class="wrapper">
+      
+      <h1>Stay in Touch</h1>
+      <p>Subscribe to our newsletter for the latest deals</p>
+      <form>
+        <input type="text" placeholder="Email" id="cta-input">
+        <!--
+            <p class="warning" id="cta-warning">Please enter a valid email.</p>
+            <p class="confirm" id="cta-confirm">Thanks for signing up!</p>
+        -->
+        <a class="pill-btn" id="cta-submit">Subscribe</a>
+      </form>
+      
+    </div>
+  </section>
+  
+  
+  
+  <!-- modal-->
+  <div class="modal-link">
+    <a href="#" class="square-btn">$</a>
+  </div>
+
+   <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="wrapper">
+     
+      <div class="modal" id="modal">
+        <div class="modal-guts">
+          <a id="close">No thanks, I hate saving money</a>
+          <form>
+             <h1>Save 15% on your next Sitters reservation!</h1>
+            <input type="text" placeholder="Email">
+            <!--
+                <p class="warning">Please a valid email.</p>
+                <p class="confirm" id="modal-confirm">Enjoy!</p>
+            -->
+            <a class="pill-btn" id="modal-submit">Submit</a>
+          </form>
+        </div>
+    </div>
+    </div>
+  
+  <!-- footer -->
+  <footer id="footer">
+    <div class="wrapper">
+      
+      <p>&copy; 2017 Lexus Drumgold</p>
+      
+    </div>
+  </footer>
+  
+  
+</body>
+</html>

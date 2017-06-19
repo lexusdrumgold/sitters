@@ -1,0 +1,314 @@
+/* GLOBAL STYLES */
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  overflow-y: overlay;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.wrapper {
+  width: 2480px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+a, button {
+  text-decoration: none;
+}
+a:hover, button:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+section, footer {
+  padding: 1.5em 0;
+}
+section h1, footer h1 {
+  text-align: center;
+}
+
+/* BUTTONS.SASS - BUTTON STYLES */
+.btn, .square-btn, .pill-btn {
+  background-color: #e91e63;
+  color: #fff;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.square-btn {
+  padding: 1.375em 0.75em;
+}
+
+.pill-btn {
+  border-radius: 2em;
+  padding: 0.5em 1.5em;
+}
+
+/* MODULES.SASS - MODULE STYLES */
+/* FOOTER STYLES */
+#footer {
+  padding: 0.375em 0;
+  background-color: #abaaaa;
+}
+#footer p {
+  text-align: center;
+  font-size: 0.85em;
+}
+
+/* MODAL STYLES */
+.modal-link a {
+  -webkit-transition: all 0.375s ease-in-out;
+  -moz-transition: all 0.375s ease-in-out;
+  -ms-transition: all 0.375s ease-in-out;
+  -o-transition: all 0.375s ease-in-out;
+  transition: all 0.375s ease-in-out;
+  font-size: 1.2em;
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  z-index: 99;
+}
+@media all and (max-width: 400px) {
+  .modal-link a {
+    bottom: 215px;
+  }
+}
+
+.modal-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 1em;
+  align-items: center;
+  justify-content: center;
+}
+.modal .modal-guts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 750px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 0.75em;
+  padding: 0 1.5em;
+}
+.modal .modal-guts #close {
+  align-self: flex-end;
+  margin: 1.5em 0 0 0;
+}
+.modal .modal-guts form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 0 3em;
+}
+.modal .modal-guts form h1 {
+  text-align: center;
+  margin: 0 0 0.25em;
+}
+.modal .modal-guts form input {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 85%;
+  padding: 0.375em 0.5em;
+  border: 3px solid #abaaaa;
+  outline: none;
+  margin: 0.5em 0 1em;
+}
+.modal .modal-guts form input:focus {
+  border-color: #e91e63;
+}
+.modal .modal-guts form .warning {
+  display: none;
+  color: red;
+  font-weight: 600;
+}
+
+/* LAYOUTS.SASS - SECTION STYLES */
+/* LANDING SECTION STYLES */
+#landing {
+  background-image: url("../../assets/img/banner-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+@media all and (max-width: 420px) {
+  #landing {
+    background-position: -600px bottom;
+  }
+}
+@media all and (max-width: 360px) {
+  #landing {
+    background-position: -725px bottom;
+  }
+}
+#landing header {
+  padding: 1.5em 0;
+  width: 100%;
+}
+#landing header nav {
+  float: right;
+}
+#landing header nav a {
+  margin: 0 0 0 0.75em;
+  color: #fff;
+  text-transform: uppercase;
+}
+#landing .banner-content {
+  padding: 15em 0;
+}
+#landing .banner-content h1 {
+  text-align: left;
+  margin: 0;
+  font-size: 3.5em;
+  line-height: 90%;
+}
+#landing .banner-content h1:last-of-type {
+  margin-bottom: 0.5em;
+}
+#landing .banner-content #learn-more {
+  font-size: 1em;
+}
+
+/* ABOUT SECTION STYLES */
+/* SERVICES SECTION STYLES */
+#services .service-blocks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media all and (max-width: 1335px) {
+  #services .service-blocks {
+    justify-content: center;
+  }
+}
+#services .service-blocks div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 250px;
+  background-color: #e2e2e2;
+  border-radius: 1em;
+  padding: 0 1.25em;
+  margin: 1% 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media all and (max-width: 1335px) {
+  #services .service-blocks div {
+    margin: 1%;
+  }
+}
+@media all and (max-width: 400px) {
+  #services .service-blocks div {
+    width: 100%;
+  }
+}
+#services .service-blocks div h3, #services .service-blocks div p {
+  text-align: center;
+}
+#services .service-blocks div h3 {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+}
+@media all and (max-width: 400px) {
+  #services .service-blocks div h3 {
+    font-size: 1.5em;
+  }
+}
+#services .service-blocks div a {
+  font-size: 0.9em;
+  align-self: center;
+}
+
+/* CTA STYLES */
+#cta .wrapper, #cta form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#cta h1 {
+  margin: 0;
+}
+#cta form input {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 200%;
+  padding: 0.25em;
+  border: 3px solid #abaaaa;
+  outline: none;
+  margin: 0.5em 0 1em;
+}
+#cta form input:focus {
+  border-color: #e91e63;
+}
+#cta form .warning {
+  display: none;
+  color: red;
+  font-weight: 600;
+  margin-top: 0;
+}
+#cta form .confirm {
+  display: none;
+  color: green;
+  font-weight: 600;
+  margin-top: 0;
+}
+#cta form a {
+  font-size: 0.9em;
+}
